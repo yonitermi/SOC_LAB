@@ -33,11 +33,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            echo 'Cleaning up temporary files...'
-            sh 'rm -f temp_key.pem'
-        }
-    }
 }
